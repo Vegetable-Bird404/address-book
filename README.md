@@ -16,11 +16,11 @@
 
 ## 登陆界面
 
-<img src="D:\CommonFiles\myProject\pythonProj\address-book\source\loginUI.jpg" alt="loginUI" style="zoom: 67%;" />
+<img src="source\loginUI.jpg" alt="loginUI" style="zoom: 67%;" />
 
 ​       输入用户名和密码，可以进行注册或登录操作，注册则保存到user.db数据库中，登录则查询数据库中是否有匹配的username和password
 
-<img src="D:\CommonFiles\myProject\pythonProj\address-book\source\database_user.jpg" alt="database_user" style="zoom:67%;" />
+<img src="source\database_user.jpg" alt="database_user" style="zoom:67%;" />
 
 ```python
 class login_window(QtWidgets.QMainWindow, Ui_Form):
@@ -87,9 +87,9 @@ class login_window(QtWidgets.QMainWindow, Ui_Form):
 
 ## 主界面
 
-<img src="D:\CommonFiles\myProject\pythonProj\address-book\source\MainUI.jpg" alt="MainUI" style="zoom:67%;" />
+<img src="source\MainUI.jpg" alt="MainUI" style="zoom:67%;" />
 
-![database](D:\CommonFiles\myProject\pythonProj\address-book\source\database.jpg)
+![database](source\database.jpg)
 
 ```python
 class main_window(QtWidgets.QMainWindow, Ui_MainWindow):
@@ -201,7 +201,7 @@ self.pushButtonAdd.clicked.connect(self.openDialog)  # 添加信息
 #### 插入数据条目子界面
 增加条目子界面：
 
-<img src="D:\CommonFiles\myProject\pythonProj\address-book\source\InsertUI.jpg" alt="InsertUI" style="zoom:67%;" />
+<img src="source\InsertUI.jpg" alt="InsertUI" style="zoom:67%;" />
 
 ```python
 
@@ -344,7 +344,7 @@ def ChangeDatabase(self, item):
 
 #### 输入非法字符时警告
 
-<img src="D:\CommonFiles\myProject\pythonProj\address-book\source\warning.jpg" alt="warning" style="zoom:67%;" />
+<img src="source\warning.jpg" alt="warning" style="zoom:67%;" />
 
 ### 根据当前数据库内容更新表格
 
@@ -367,7 +367,7 @@ def refresh_table(self):
 
 - 在查找框中删除信息重新点击查询按钮时恢复显示所有条目
 
-<img src="D:\CommonFiles\myProject\pythonProj\address-book\source\SearchName.jpg" alt="SearchName" style="zoom: 50%;" /><img src="D:\CommonFiles\myProject\pythonProj\address-book\source\SearchID.jpg" alt="SearchID" style="zoom: 50%;" />
+<img src="source\SearchName.jpg" alt="SearchName" style="zoom: 50%;" /><img src="source\SearchID.jpg" alt="SearchID" style="zoom: 50%;" />
 
 ```python
 def SearchDatabase(self, value):
@@ -410,9 +410,9 @@ def SearchDatabase(self, value):
 
 点击按钮打开文件路径存储选择窗口
 
-<img src="D:\CommonFiles\myProject\pythonProj\address-book\source\filesave.png" alt="filesave" style="zoom:67%;" />
+<img src="source\filesave.png" alt="filesave" style="zoom:67%;" />
 
-![pdf](D:\CommonFiles\myProject\pythonProj\address-book\source\pdf.jpg)
+<img src="source\pdf.jpg" alt="pdf" style="zoom: 67%;" />
 
 ```python
 self.pushButton.clicked.connect(self.ExportPDF)
